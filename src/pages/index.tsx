@@ -1,6 +1,6 @@
 import * as React from "react";
-import { Projects } from "./Projects";
-import { SocialsSection } from "./SocialsSection";
+import { Projects } from "../components/Projects";
+import { SocialsSection } from "../components/SocialsSection";
 
 const IndexPage = () => {
   return (
