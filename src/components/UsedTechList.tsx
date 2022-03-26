@@ -6,7 +6,9 @@ type Props = {
   used: Project["used"];
 };
 
-const listCB = (item: UsedTechKey) => {
+const listCB = (item: UsedTechKey | null) => {
+  if (item === null) return;
+
   const [name, color] = usedTech[item];
 
   return (
