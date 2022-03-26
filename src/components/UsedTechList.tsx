@@ -1,34 +1,48 @@
 import * as React from "react";
-import { Concepts, Tools, Project } from "../types";
+import { usedTech, Project, UsedTechKey } from "../types";
 import { Gem } from "./Gem";
 
 type Props = {
   used: Project["used"];
 };
 
-const listCB = (item: Concepts | Tools) => {
-  let gemColor = "#000";
-  switch (item) {
-    case "JavaScript":
-      gemColor = "#fffc5f";
-    default:
-      break;
-  }
+const listCB = (item: UsedTechKey) => {
+  const [name, color] = usedTech[item];
 
   return (
     <li className="flex items-center">
-      {<Gem color={gemColor} style={{ marginRight: 4 }} />}
-      {item}
+      {<Gem color={color} style={{ margin: 5 }} />}
+      {name}
     </li>
   );
 };
 
 export const UsedTechList = ({ used }: Props) => {
   return used ? (
-    <>
-      {used.concepts && <ul>{used.concepts.map(listCB)}</ul>}
-      {used.frontend && <ul>{used.frontend.map(listCB)}</ul>}
-      {used.backend && <ul>{used.backend.map(listCB)}</ul>}
-    </>
+    <div className="flex items-stretch flex-wrap">
+      {used.concepts && (
+        <div className={styles.colContainer}>
+          <h6 className={styles.heading}>Concepts</h6>
+          <ul>{used.concepts.map(listCB)}</ul>
+        </div>
+      )}
+      {used.frontend && (
+        <div className={styles.colContainer}>
+          <h6 className={styles.heading}>Front End Tools</h6>
+          <ul>{used.frontend.map(listCB)}</ul>
+        </div>
+      )}
+      {used.backend && (
+        <div className={styles.colContainer}>
+          <h6 className={styles.heading}>Back End Tools</h6>
+          <ul>{used.backend.map(listCB)}</ul>
+        </div>
+      )}
+    </div>
   ) : null;
+};
+
+const styles = {
+  colContainer: "grow mr-24 mb-3",
+  heading: "text-gray-500",
 };

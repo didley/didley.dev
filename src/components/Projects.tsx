@@ -1,27 +1,9 @@
 import * as React from "react";
 import { UsedTechList } from "./UsedTechList";
-
-import { Project } from "../types";
-
-const projects: Project[] = [
-  {
-    title: "Calorie Tracker",
-    repoUrl: "https://github.com/didley/calorie-tracker/blob/master/README.md",
-    liveUrl: { url: "https://track-cals.didley.dev/", title: "Live Site" },
-    description: "",
-    images: [
-      "../images/cal-tracker-diary.gif",
-      "../images/cal-tracker-addFood.gif",
-    ],
-    used: {
-      concepts: ["Backend"],
-      frontend: ["JavaScript"],
-      backend: ["MongoDB"],
-    },
-  },
-];
+import { data } from "../data";
 
 export const Projects = () => {
+  const { projects } = data;
   return (
     <div className="">
       <div className="bg-white max-w-2xl mt-10 m-auto p-5 rounded-sm shadow-sm">
