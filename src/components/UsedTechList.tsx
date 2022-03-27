@@ -12,7 +12,7 @@ const listCB = (item: UsedTechKey | null) => {
   const [name, color] = usedTech[item];
 
   return (
-    <li className="flex items-center">
+    <li className="flex items-center" key={name}>
       {<Gem color={color} style={{ margin: 5 }} />}
       {name}
     </li>
@@ -45,6 +45,6 @@ export const UsedTechList = ({ used }: Props) => {
 };
 
 const styles = {
-  colContainer: "grow mr-24 mb-3",
+  colContainer: "grow mr-3 mb-3",
   heading: "text-gray-500",
 };

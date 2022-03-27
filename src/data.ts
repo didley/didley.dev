@@ -13,8 +13,8 @@ export const data: Data = {
       liveUrl: { url: "https://track-cals.didley.dev/", title: "Live Site" },
       description: "",
       images: [
-        "../images/cal-tracker-diary.gif",
-        "../images/cal-tracker-addFood.gif",
+        "https://github.com/didley/calorie-tracker/raw/master/demo/diary.gif",
+        "https://github.com/didley/calorie-tracker/raw/master/demo/addFood.gif",
       ],
       used: {
         concepts: ["asyncStateManagement"],
