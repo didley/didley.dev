@@ -1,10 +1,16 @@
 import { Project } from "./types";
 
 type Data = {
+  socials: { email: string; twitter: string; gitHub: string };
   projects: Project[];
 };
 
 export const data: Data = {
+  socials: {
+    email: "didley.dev@gmail.com",
+    twitter: "_didley",
+    gitHub: "didley",
+  },
   projects: [
     {
       title: "Calorie Tracker",

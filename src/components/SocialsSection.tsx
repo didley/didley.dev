@@ -1,5 +1,7 @@
 import * as React from "react";
 import { FaGithub, FaTwitter, FaMapMarkerAlt } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
+import { data } from "../data";
 
 export const SocialsSection = () => {
   return (
@@ -10,29 +12,33 @@ export const SocialsSection = () => {
           className="rounded-full w-12 sm:w-32 border"
         />
       </div>
-      <div className="flex">
-        <span role="img" aria-label="waving hand" className="mr-2">
+      <div className="flex items-center">
+        <p className="font-bold">Hello, welcome.</p>
+        <span role="img" aria-label="waving hand" className="mr-1 text-xs">
           👋
         </span>
-        <h1 className="font-bold">Hey, I'm Dylan</h1>
       </div>
-      <a
-        href="https://github.com/didley"
-        className="text-gray-700 flex items-center"
-      >
-        <FaGithub className="mr-2" />
-        @didley
-      </a>
-      <a
-        href="https://twitter.com/_didley"
-        className="text-blue-500 flex items-center"
-      >
-        <FaTwitter className="mr-2" />
-        @_didley
-      </a>
+      <div className="flex">
+        <a
+          href={`https://github.com/${data.socials.gitHub}`}
+          className="text-gray-700 flex items-center mr-4"
+        >
+          <FaGithub className="mr-1" />@{data.socials.gitHub}
+        </a>
+        <a
+          href={`https://twitter.com/${data.socials.twitter}`}
+          className="text-blue-500 flex items-center mr-4"
+        >
+          <FaTwitter className="mr-1" />@{data.socials.twitter}
+        </a>
+        <a href={`mailto:${data.socials.email}`} className="flex items-center">
+          <FiMail className="mr-1" />
+          Email
+        </a>
+      </div>
 
       <p className="flex items-center">
-        <FaMapMarkerAlt className="mr-2 text-red-500" /> Melbourne Australia
+        <FaMapMarkerAlt className="mr-1 text-red-500" /> Melbourne Australia
       </p>
     </>
   );

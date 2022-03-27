@@ -4,33 +4,33 @@
 
 @layer base {
   h1 {
-    @apply text-4xl font-bold text-gray-900;
+    @apply sm:text-4xl text-3xl text-gray-900 font-bold;
   }
   h2 {
-    @apply text-3xl font-bold text-gray-900;
+    @apply sm:text-3xl text-2xl text-gray-900 font-bold;
   }
   h3 {
-    @apply text-2xl text-gray-900;
+    @apply sm:text-2xl text-xl text-gray-900;
   }
   h4 {
-    @apply text-xl text-gray-900;
+    @apply sm:text-xl text-lg text-gray-900;
   }
   h5 {
-    @apply text-lg text-gray-900;
+    @apply sm:text-lg text-base text-gray-900;
   }
   h6 {
-    @apply text-base text-gray-900;
+    @apply sm:text-base text-sm text-gray-900 font-bold;
   }
   p {
-    @apply text-sm text-gray-900;
+    @apply sm:text-sm text-xs text-gray-900;
   }
   a {
-    @apply text-sm text-purple-500;
+    @apply sm:text-sm text-xs text-purple-600;
   }
   small {
-    @apply text-xs text-gray-900;
+    @apply sm:text-xs text-xs text-gray-900;
   }
   li {
-    @apply text-xs text-gray-900;
+    @apply sm:text-xs text-xs text-gray-900;
   }
 }
