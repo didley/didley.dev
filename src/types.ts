@@ -25,7 +25,7 @@ export type UsedTechKey = keyof UsedTech;
 export type Project = {
   title: string;
   repoUrl: string;
-  liveUrl?: { url: string; title: string };
+  liveUrl?: { url: string; title: "Live Site" | "Live App" };
   description?: string;
   images?: string[];
   used: {

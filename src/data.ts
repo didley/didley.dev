@@ -42,5 +42,17 @@ export const data: Data = {
         backend: ["mongo", "express", "node"],
       },
     },
+    {
+      title: "Life Point Tracker",
+      repoUrl: "https://github.com/didley/lp-track",
+      liveUrl: { url: "https://track-lp.didley.dev/", title: "Live Site" },
+      description: "",
+      images: ["https://github.com/didley/lp-track/raw/dev/demo/lp-track.gif"],
+      used: {
+        concepts: null,
+        frontend: ["TS"],
+        backend: null,
+      },
+    },
   ],
 };
