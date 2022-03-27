@@ -14,7 +14,7 @@ export const Projects = () => {
         </h2>
         {projects.map((proj) => {
           return (
-            <div key={proj.title}>
+            <div key={proj.title} className="mb-3 border-b">
               {proj.images && (
                 <div className="flex justify-evenly flex-wrap">
                   {proj?.images.map((img, i) => (
@@ -34,11 +34,11 @@ export const Projects = () => {
                     href={proj.liveUrl?.url}
                     className="flex items-center mr-3"
                   >
-                    <BiWorld className="mr-1" size={20} />
+                    <BiWorld className="mr-1" size={17} />
                     {proj.liveUrl?.title}
                   </a>
                   <a href={proj?.repoUrl} className="flex items-center">
-                    <FaGithub className="mr-1" size={18} />
+                    <FaGithub className="mr-1" size={15} />
                     GitHub Repo
                   </a>
                 </div>

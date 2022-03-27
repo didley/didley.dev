@@ -5,10 +5,10 @@ export const usedTech = {
   noSQL: ["No SQL"],
   auth: ["Authentication"],
 
-  react: ["React"],
+  react: ["React", "#61dafb"],
   reactQuery: ["React Query", "#ff4154"],
-  redux: ["Redux"],
-  sagas: ["Redux Sagas"],
+  redux: ["Redux", "#764abc"],
+  sagas: ["Redux Sagas", "#86d46b"],
 
   node: ["Node", "#026e00"],
   express: ["ExpressJS", "#606060"],
@@ -16,6 +16,7 @@ export const usedTech = {
 
   TS: ["TypeScript", "#3178c6"],
   JS: ["JavaScript", "#fcdc00"],
+  jest: ["Jest", "#15c213"],
 };
 
 export type UsedTech = typeof usedTech;
@@ -28,8 +29,8 @@ export type Project = {
   description?: string;
   images?: string[];
   used: {
-    concepts: (UsedTechKey | null)[];
-    frontend: (UsedTechKey | null)[];
-    backend: (UsedTechKey | null)[];
+    concepts: UsedTechKey[] | null;
+    frontend: UsedTechKey[] | null;
+    backend: UsedTechKey[] | null;
   };
 };
