@@ -15,7 +15,7 @@ export const data: Data = {
     {
       title: "Picks",
       repoUrl: "https://github.com/didley/picks",
-      liveUrl: { url: "https://picks.didley.dev/", title: "Live Site" },
+      liveUrl: { url: "https://staging.picks.didley.dev/", title: "Live Site" },
       description: "",
       images: [
         "https://github.com/didley/picks/raw/dev/demo/picks-profile.gif",
