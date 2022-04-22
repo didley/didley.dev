@@ -4,7 +4,7 @@ import { SocialsSection } from "../components/SocialsSection";
 
 const IndexPage = () => {
   return (
-    <main className="bg-slate-50 h-screen sm:py-5 py-2 sm:px-10 px-2 selection:bg-green-200">
+    <main className="h-full w-full sm:py-5 py-2 sm:px-10 px-2 selection:bg-purple-200">
       <div className="absolute top-0 right-0 sm:mr-10 mr-2 sm:mt-5 mt-1 flex flex-col items-end">
         <div className="flex items-center justify-end">
           <span className="sm:text-5xl text-lg text-right font-extrabold italic text-gray-900 pr-1">
