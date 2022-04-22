@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply bg-slate-50;
+  }
   h1 {
     @apply sm:text-4xl text-3xl text-gray-900 font-bold;
   }

@@ -12,17 +12,12 @@ export const SocialsSection = () => {
           className="rounded-full w-12 sm:w-32 border"
         />
       </div>
-      <div className="flex items-center mb-2">
-        <p className="font-bold">Hello, welcome</p>
-        <span role="img" aria-label="waving hand" className="mx-1 text-xs">
-          👋
-        </span>
+      <div className="flex items-center mb-1">
+        <p className="font-bold italic">"Hello and welcome"</p>
       </div>
-
       <p className="flex items-center mb-1">
         <FaMapMarkerAlt className="mr-1 text-red-500" /> Melbourne
       </p>
-
       <div className="flex justify-start">
         <a
           href={`https://github.com/${data.socials.gitHub}`}
