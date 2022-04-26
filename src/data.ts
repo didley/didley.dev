@@ -23,8 +23,8 @@ export const data: Data = {
       description: "",
       images: [gardenManagerGIF],
       used: {
-        concepts: ["collaboration"],
-        frontend: ["reactNative", "redux"],
+        concepts: ["collaboration", "globalState"],
+        frontend: ["reactNative", "TS", "redux"],
         backend: null,
       },
     },
