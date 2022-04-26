@@ -22,7 +22,7 @@ export const Projects = () => {
                       src={img}
                       key={img}
                       alt={`${proj.title} example ${i + 1}`}
-                      className="rounded-lg object-cover object-top m-1 sm:w-48 w-36 sm:max-h-80 max-h-60"
+                      className="rounded-lg object-cover object-top m-1 sm:w-48 w-36 sm:max-h-80 max-h-60 border"
                     />
                   ))}
                 </div>
@@ -30,17 +30,21 @@ export const Projects = () => {
               <div className="flex items-center justify-between my-2 flex-wrap">
                 <h3 className="font-extrabold italic text-xl">{proj?.title}</h3>
                 <div className="flex items-center">
-                  <a
-                    href={proj.liveUrl?.url}
-                    className="flex items-center mr-3"
-                  >
-                    <BiWorld className="mr-1" size={17} />
-                    {proj.liveUrl?.title}
-                  </a>
-                  <a href={proj?.repoUrl} className="flex items-center">
-                    <FaGithub className="mr-1" size={15} />
-                    GitHub Repo
-                  </a>
+                  {proj.liveUrl?.url && (
+                    <a
+                      href={proj.liveUrl?.url}
+                      className="flex items-center mr-3"
+                    >
+                      <BiWorld className="mr-1" size={17} />
+                      {proj.liveUrl?.title}
+                    </a>
+                  )}
+                  {proj?.repoUrl && (
+                    <a href={proj?.repoUrl} className="flex items-center">
+                      <FaGithub className="mr-1" size={15} />
+                      GitHub Repo
+                    </a>
+                  )}
                 </div>
               </div>
               <UsedTechList used={proj.used} />

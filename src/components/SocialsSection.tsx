@@ -12,8 +12,16 @@ export const SocialsSection = () => {
           className="rounded-full w-12 sm:w-32 border"
         />
       </div>
+      {data.message && (
+        <div className="flex items-center mb-1">
+          <p className="font-bold italic">"{data.message}"</p>
+        </div>
+      )}
       <div className="flex items-center mb-1">
-        <p className="font-bold italic">"Hello and welcome"</p>
+        <p className="text-xs">
+          Work status:{" "}
+          {data.lookingForWork ? "Looking for work" : "Not looking for work"}
+        </p>
       </div>
       <p className="flex items-center mb-1">
         <FaMapMarkerAlt className="mr-1 text-red-500" /> Melbourne

@@ -1,17 +1,33 @@
 import { Project } from "./types";
+import gardenManagerGIF from "./images/gardenManagerDemo.gif";
 
 type Data = {
+  message?: string;
+  lookingForWork: boolean;
   socials: { email: string; twitter: string; gitHub: string };
   projects: Project[];
 };
 
 export const data: Data = {
+  message: "Hello and welcome",
+  lookingForWork: true,
   socials: {
     email: "didley.dev@gmail.com",
     twitter: "_didley",
     gitHub: "didley",
   },
   projects: [
+    {
+      title: "Garden Manager",
+      repoUrl: "https://github.com/Cliffsters-Inc/garden-manager-native",
+      description: "",
+      images: [gardenManagerGIF],
+      used: {
+        concepts: ["collaboration"],
+        frontend: ["reactNative", "redux"],
+        backend: null,
+      },
+    },
     {
       title: "Picks",
       repoUrl: "https://github.com/didley/picks",
@@ -50,7 +66,7 @@ export const data: Data = {
       images: ["https://github.com/didley/lp-track/raw/dev/demo/lp-track.gif"],
       used: {
         concepts: null,
-        frontend: ["TS"],
+        frontend: ["TS", "react"],
         backend: null,
       },
     },

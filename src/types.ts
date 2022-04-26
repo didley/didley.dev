@@ -4,8 +4,10 @@ export const usedTech = {
   asyncStateManagement: ["Async State Management"],
   noSQL: ["No SQL"],
   auth: ["Authentication"],
+  collaboration: ["GIT Collaboration"],
 
   react: ["React", "#61dafb"],
+  reactNative: ["React Native", "#61dafb"],
   reactQuery: ["React Query", "#ff4154"],
   redux: ["Redux", "#764abc"],
   sagas: ["Redux Sagas", "#86d46b"],
