@@ -45,7 +45,7 @@ export const data: Data = {
     {
       title: "Calorie Tracker",
       repoUrl:
-        "https://github.com/didley/calorie-tracker/blob/master/README.md",
+        "https://github.com/didley/calorie-tracker/",
       liveUrl: { url: "https://track-cals.didley.dev/", title: "Live Site" },
       description: "",
       images: [
