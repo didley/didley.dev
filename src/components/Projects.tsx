@@ -47,6 +47,7 @@ export const Projects = () => {
                   )}
                 </div>
               </div>
+              <div className="text-xs mb-2">{proj.description}</div>
               <UsedTechList used={proj.used} />
             </div>
           );

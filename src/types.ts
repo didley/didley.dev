@@ -9,6 +9,7 @@ export const usedTech = {
   react: ["React", "#61dafb"],
   reactNative: ["React Native", "#61dafb"],
   reactQuery: ["React Query", "#ff4154"],
+  reactContext: ["React Context", "#61dafb"],
   redux: ["Redux", "#764abc"],
   sagas: ["Redux Sagas", "#86d46b"],
 
