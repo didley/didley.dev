@@ -1,5 +1,10 @@
 import * as React from "react";
-import { FaGithub, FaTwitter, FaMapMarkerAlt } from "react-icons/fa";
+import {
+  FaGithub,
+  FaTwitter,
+  FaMapMarkerAlt,
+  FaLinkedin,
+} from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import { data } from "../data";
 
@@ -32,6 +37,12 @@ export const SocialsSection = () => {
           className="text-gray-700 flex items-center mr-4"
         >
           <FaGithub className="mr-1" />@{data.socials.gitHub}
+        </a>
+        <a
+          href={`https://linkedin.com/in/${data.socials.linkedIn}`}
+          className="text-blue-700 flex items-center mr-4"
+        >
+          <FaLinkedin className="mr-1" />@{data.socials.linkedIn}
         </a>
         <a
           href={`https://twitter.com/${data.socials.twitter}`}

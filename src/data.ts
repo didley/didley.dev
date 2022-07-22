@@ -4,7 +4,12 @@ import gardenManagerGIF from "./images/gardenManagerDemo.gif";
 type Data = {
   message?: string;
   lookingForWork: boolean;
-  socials: { email: string; twitter: string; gitHub: string };
+  socials: {
+    email?: string;
+    twitter?: string;
+    gitHub?: string;
+    linkedIn?: string;
+  };
   projects: Project[];
 };
 
@@ -15,8 +20,21 @@ export const data: Data = {
     email: "didley.dev@gmail.com",
     twitter: "_didley",
     gitHub: "didley",
+    linkedIn: "didleyDev",
   },
   projects: [
+    {
+      title: "Garden Manager",
+      repoUrl: "https://github.com/Cliffsters-Inc/garden-manager-native",
+      description:
+        "A React Native app built in collaboration with another developer via GitHub. Users can track their garden creating progress logs for their plants.",
+      images: [gardenManagerGIF],
+      used: {
+        concepts: ["collaboration", "globalState"],
+        frontend: ["reactNative", "TS", "redux"],
+        backend: null,
+      },
+    },
     {
       title: "Picks",
       repoUrl: "https://github.com/didley/picks",
@@ -30,18 +48,6 @@ export const data: Data = {
         concepts: ["testing", "asyncStateManagement", "auth"],
         frontend: ["redux", "sagas", "react"],
         backend: ["mongo", "express", "node"],
-      },
-    },
-    {
-      title: "Garden Manager",
-      repoUrl: "https://github.com/Cliffsters-Inc/garden-manager-native",
-      description:
-        "A React Native app built in collaboration with another developer via GitHub. Users can track their garden creating progress logs for their plants.",
-      images: [gardenManagerGIF],
-      used: {
-        concepts: ["collaboration", "globalState"],
-        frontend: ["reactNative", "TS", "redux"],
-        backend: null,
       },
     },
     {
