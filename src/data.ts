@@ -15,7 +15,7 @@ type Data = {
 
 export const data: Data = {
   message: "Hello and welcome",
-  lookingForWork: true,
+  lookingForWork: false,
   socials: {
     email: "didley.dev@gmail.com",
     twitter: "_didley",
