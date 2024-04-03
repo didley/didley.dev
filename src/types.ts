@@ -5,6 +5,7 @@ export const usedTech = {
   noSQL: ["No SQL"],
   auth: ["Authentication"],
   collaboration: ["GIT Collaboration"],
+  nativeModules: ["Native Modules"],
 
   react: ["React", "#61dafb"],
   reactNative: ["React Native", "#61dafb"],
@@ -19,6 +20,7 @@ export const usedTech = {
 
   TS: ["TypeScript", "#3178c6"],
   JS: ["JavaScript", "#fcdc00"],
+  swift: ["Swift", "#e0664e"],
   jest: ["Jest", "#15c213"],
 };
 
@@ -27,7 +29,7 @@ export type UsedTechKey = keyof UsedTech;
 
 export type Project = {
   title: string;
-  repoUrl: string;
+  repoUrl?: string;
   liveUrl?: { url: string; title: "Live Site" | "Live App" };
   description?: string;
   images?: string[];

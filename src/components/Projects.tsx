@@ -28,19 +28,19 @@ export const Projects = () => {
                 </div>
               )}
               <div className="flex items-center justify-between my-2 flex-wrap">
-                <h3 className="font-extrabold italic text-xl">{proj?.title}</h3>
+                <h3 className="font-extrabold italic text-xl">{proj.title}</h3>
                 <div className="flex items-center">
                   {proj.liveUrl?.url && (
                     <a
-                      href={proj.liveUrl?.url}
+                      href={proj.liveUrl.url}
                       className="flex items-center mr-3"
                     >
                       <BiWorld className="mr-1" size={17} />
-                      {proj.liveUrl?.title}
+                      {proj.liveUrl.title}
                     </a>
                   )}
-                  {proj?.repoUrl && (
-                    <a href={proj?.repoUrl} className="flex items-center">
+                  {proj.repoUrl && (
+                    <a href={proj.repoUrl} className="flex items-center">
                       <FaGithub className="mr-1" size={15} />
                       GitHub Repo
                     </a>
