@@ -1,5 +1,6 @@
 import { Project } from "./types";
 import gardenManagerGIF from "./images/gardenManagerDemo.gif";
+import nasiaGIF from "./images/nasiaDemo.gif"
 
 type Data = {
   message?: string;
@@ -14,7 +15,7 @@ type Data = {
 };
 
 export const data: Data = {
-  message: "Hello and welcome",
+  message: "Welcome 👋",
   lookingForWork: false,
   socials: {
     email: "didley.dev@gmail.com",
@@ -24,10 +25,23 @@ export const data: Data = {
   },
   projects: [
     {
+      title: "Nasia",
+      description: `A workout tracker released on the App Store. Some features include live activates and colour theming. 
+      
+      I've attempt to create, as much as possible, an iOS native feeling app with React Native. To achieve this I've implemented multiple techniques such as haptic feedback on buttons and replicating iOS UI elements.`,
+      images: [nasiaGIF],
+      liveUrl: { title: "Live App", url: "https://apps.apple.com/au/app/nasia/id6451111469" },
+      used: {
+        concepts: ["nativeModules",],
+        frontend: ["reactNative", "TS", "swift"],
+        backend: null
+      }
+    },
+    {
       title: "Garden Manager",
       repoUrl: "https://github.com/Cliffsters-Inc/garden-manager-native",
       description:
-        "A React Native app built in collaboration with another developer via GitHub. Users can track their garden creating progress logs for their plants.",
+        "A React Native app built in collaboration with another developer. Users can track their garden creating progress logs for their plants.",
       images: [gardenManagerGIF],
       used: {
         concepts: ["collaboration", "globalState"],
