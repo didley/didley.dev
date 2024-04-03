@@ -10,11 +10,11 @@ export const Projects = () =>
     <h2 className="font-extrabold italic text-4xl text-gray-900 uppercase mb-3">
       Projects
     </h2>
-    {data.projects.map((proj) => <Project proj={proj} />)}
+    {data.projects.map((proj) => <ProjectSection proj={proj} />)}
   </div>
 
 
-const Project = ({ proj }: { proj: Project }) =>
+const ProjectSection = ({ proj }: { proj: Project }) =>
   <div key={proj.title} className="mb-3 border-b">
     <ImagesSection images={proj.images} projTitle={proj.title} />
     <div className="flex flex-col gap-3">
