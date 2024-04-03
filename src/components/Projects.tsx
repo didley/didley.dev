@@ -22,7 +22,7 @@ export const Projects = () => {
                       src={img}
                       key={img}
                       alt={`${proj.title} example ${i + 1}`}
-                      className="rounded-lg object-cover object-top m-1 sm:w-48 w-36 sm:max-h-80 max-h-60 border"
+                      className="rounded-lg object-cover object-top m-1 sm:w-48 w-36 border"
                     />
                   ))}
                 </div>
